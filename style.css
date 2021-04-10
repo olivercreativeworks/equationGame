@@ -1,0 +1,16 @@
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+#scoreDisplayArea {
+	margin-top: 0.5rem;
+}
+
+p:last-of-type {
+	/* display: none; */
+	color: blue;
+}
+.hidden {
+	display: none;
+}
