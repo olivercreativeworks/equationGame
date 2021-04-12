@@ -1,6 +1,45 @@
 // This is a game where the player is shown an equation and tries to figure out what the output will be.
 
+import './utilityFuncs.js'
+
 // Background Functions
+
+// Make the Equation
+
+function createEquation(possibleEquationComponents, equationLength) {
+ let equation = [];
+ for (let i = 0; i < equationLength; i++){
+
+ }
+}
+function sample(list, num, dict) {
+ let sampleList = [];
+ for (let i = 0; i < num; i++){
+  let randomNum = Math.floor(Math.random() * list.length)
+  sampleList.push(dict[list[randomNum]])
+ }
+ return sampleList
+}
+
+// Equation Values
+const colors = {
+ 0: 'mint',
+ 1: 'red',
+ 2 : 'yellow',
+ 3 : 'blue',
+ 4 : 'green',
+ 5 : 'orange',
+ 6 : 'purple',
+ 7 : 'black',
+ 8 : 'white',
+ 9 : 'grey',
+ '-': '-',
+ '+': '+'
+}
+
+console.log(colors[randomChoice(colors)])
+
+
 function sample(list, num, dict) {
  let sampleList = [];
  for (let i = 0; i < num; i++){
@@ -116,20 +155,8 @@ function evaluateEquation(equation) {
 
 
 // Variables
-const colors = {
- 0: 'mint',
- 1: 'red',
- 2 : 'yellow',
- 3 : 'blue',
- 4 : 'green',
- 5 : 'orange',
- 6 : 'purple',
- 7 : 'black',
- 8 : 'white',
- 9 : 'grey',
- '-': '-',
- '+': '+'
-}
+
+
 
 const numList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, '-', '+']
 let randomCharacterList = generateRandomCharacterList(numList, 3, colors)
