@@ -1,16 +1,14 @@
 // This is a game where the player is shown an equation and tries to figure out what the output will be.
 
-import './utilityFuncs.js'
-
-// Background Functions
-
 // Make the Equation
 
-function createEquation(possibleEquationComponents, equationLength) {
+function createEquation(potentialComponents, equationLength) {
  let equation = [];
  for (let i = 0; i < equationLength; i++){
-
+  let component = potentialComponents[randomChoice(potentialComponents)]
+  equation.push(component)
  }
+ return equation
 }
 function sample(list, num, dict) {
  let sampleList = [];

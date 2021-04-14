@@ -4,10 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Utility Funcs</title>
+		<script src="./utilityFuncs.js" defer></script>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Equation Game</title>
 	</head>
 	<body>
-		<h1>Some text</h1>
-		<script src="./utilityFuncs.js"></script>
+		<h1>Equation Game (Now on Git)</h1>
+		<h3 id="score">Score:</h3>
+		<p>Equation Palette</p>
+		<div class="colorPalette equation" id="equation"></div>
+		<p>Answer Palette</p>
+		<div class="colorPalette answerPalette" id="answerPalette"></div>
+		<div class="playerInput"></div>
+		<p>Selection Palette</p>
+		<div class="colorPalette selectionPalette" id="selectionPalette"></div>
+		<p>Solution:<span class="solution" id="solution"></span></p>
+
+		<p><button class="btn" id="submit">Submit</button></p>
+		<p id="result"></p>
 	</body>
 </html>
